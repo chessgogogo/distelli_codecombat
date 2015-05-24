@@ -12,9 +12,10 @@ bmcgehee/distelli_codecombat:
     - sudo apt-get -y update
     - sudo apt-get -y install make build-essential ruby ruby-dev curl git
     - git clone https://github.com/codecombat/codecombat.git
-    - sudo add-apt-repository -y ppa:chris-lea/node.js
+    #- sudo add-apt-repository -y ppa:chris-lea/node.js
     - sudo apt-get -y update
     - sudo apt-get -y install nodejs
+    - sudo apt-get -y install npm
     - cd $COCO_TREE
     - npm install
     - sudo npm install -g brunch
