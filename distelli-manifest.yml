@@ -1,10 +1,10 @@
 bmcgehee/distelli_codecombat:
   Env:
     - PORT: 3000
-    - COCO=~/src/coco
-    - COCO_TREE=~/src/coco/codecombat
-    - COCO_DB=~/src/coco/db
-    - MONGO_DL=~/mongodl
+    - COCO: ~/src/coco
+    - COCO_TREE: ~/src/coco/codecombat
+    - COCO_DB: ~/src/coco/db
+    - MONGO_DL: ~/mongodl
 
   PreInstall:
     - mkdir -p $COCO_TREE
