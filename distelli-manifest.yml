@@ -51,6 +51,7 @@ bmcgehee/distelli_codecombat:
   
   PostInstall:
     - echo "Beginning PostInstall"
+    - cd $COCO
     - sudo bin/coco-brunch &
     - sleep 59
     - echo "End PostInstall"
