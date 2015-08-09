@@ -35,6 +35,7 @@ bmcgehee/distelli_codecombat:
     - cd $COCO_DB
     - wget http://analytics.codecombat.com:8080/dump.tar.gz
     - tar xvfz dump.tar.gz
+    - export PATH=$PATH:/usr/local/bin
     - cd $COCO
     - bin/coco-mongodb fork
     - sleep 30
