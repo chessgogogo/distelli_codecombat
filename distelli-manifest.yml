@@ -19,23 +19,28 @@ bmcgehee/distelli_codecombat:
     - sudo apt-get -y install nodejs
     #- sudo apt-get -y install npm
     - cd $COCO
+    - echo "----------Doing NPM Installs----------"
     - npm install
     - sudo npm install -g brunch
     - sudo npm install -g bower
     - sudo gem install sass
+    - echo "----------Doing bower Installs----------"
     - bower install | xargs echo
     - mkdir -p $MONGO_DL
+    - echo "----------Doing mongodb Installs----------"
     - cd $MONGO_DL
     - wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.6.4.tgz
     - tar xfz mongodb-linux-x86_64-2.6.4.tgz
     - sudo cp mongodb-linux-x86_64-2.6.4/bin/* /usr/local/bin
     - sudo mkdir -p /data/db
     - sudo chown -R distelli:distelli /data/db
+    - echo "----------Doing DBdrop Installs----------"
     - mkdir -p $COCO_DB
     - cd $COCO_DB
     - wget http://analytics.codecombat.com:8080/dump.tar.gz
     - tar xvfz dump.tar.gz
     - export PATH=$PATH:/usr/local/bin
+    - echo "----------Starting Mongodb----------"
     - cd $COCO
     - bin/coco-mongodb fork
     - sleep 30
