@@ -25,6 +25,7 @@ bmcgehee/distelli_codecombat:
     - npm install
     - sudo npm install -g brunch
     - sudo npm install -g bower
+    - sudo gem update
     - sudo gem install sass
     - echo "----------Doing bower Installs----------"
     - bower install | xargs echo
